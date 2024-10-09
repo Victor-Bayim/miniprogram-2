@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "用户中心",
+    "usingComponents": {
+      "navigation-bar": "../../components/navigation-bar/navigation-bar"
+    }
+  }
+  

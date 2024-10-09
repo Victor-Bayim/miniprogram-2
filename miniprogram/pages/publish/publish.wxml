@@ -1,0 +1,24 @@
+<!-- pages/publish/publish.wxml -->
+<view class="container">
+  <navigation-bar title="发布项目"></navigation-bar>
+
+  <view class="form">
+    <view class="input-group">
+      <input type="text" placeholder="项目名称" bindinput="onNameInput" value="{{name}}" />
+    </view>
+
+    <view class="input-group">
+      <textarea placeholder="项目描述" bindinput="onDescriptionInput" value="{{description}}"></textarea>
+    </view>
+
+    <view class="input-group">
+      <input type="text" placeholder="所需技能（用逗号分隔）" bindinput="onSkillsInput" value="{{skills}}" />
+    </view>
+
+    <view class="input-group">
+      <input type="number" placeholder="项目时长（天）" bindinput="onDurationInput" value="{{duration}}" />
+    </view>
+
+    <button class="submit-button" bindtap="submitProject">发布项目</button>
+  </view>
+</view>

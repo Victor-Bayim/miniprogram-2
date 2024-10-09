@@ -1,0 +1,49 @@
+<!-- pages/project-detail/project-detail.wxml -->
+<view class="container">
+  <!-- 项目基本信息 -->
+  <view class="project-info">
+    <text class="project-title">{{project.name}}</text>
+    <text class="project-description">描述：{{project.description}}</text>
+    <text class="project-details">所需技能：{{project.skills.join(', ')}}</text>
+    <text class="project-details">项目时长：{{project.duration}} 天</text>
+    <text class="project-details">状态：{{project.status}}</text>
+  </view>
+  
+  <!-- 操作按钮 -->
+  <view class="button-group" wx:if="{{isCreator}}">
+    <button bindtap="updateStatus">{{project.status === '招募中' ? '开始项目' : (project.status === '进行中' ? '完成项目' : '重新招募')}}</button>
+    <button class="reject" bindtap="deleteProject">删除项目</button>
+  </view>
+  
+  <view class="button-group" wx:elif="{{canApply}}">
+    <button bindtap="applyProject">申请加入</button>
+  </view>
+  
+  <!-- 成员列表 -->
+  <view class="members-section">
+    <text class="members-title">成员列表</text>
+    <block wx:for="{{members}}" wx:key="id">
+      <view class="member-item">
+        <image class="member-avatar" src="{{item.avatarUrl}}" />
+        <text class="member-name">{{item.nickName}}</text>
+      </view>
+    </block>
+  </view>
+  
+  <!-- 申请列表（仅项目发起者可见） -->
+  <view class="applications-section" wx:if="{{isCreator}}">
+    <text class="applications-title">申请列表</text>
+    <block wx:for="{{applications}}" wx:key="id">
+      <view class="application-item">
+        <view class="application-details">
+          <text>{{item.applicant.nickName}}</text>
+          <text>{{item.reason}}</text>
+        </view>
+        <view class="application-actions">
+          <button bindtap="approveApplication" data-id="{{item.id}}">批准</button>
+          <button class="reject" bindtap="rejectApplication" data-id="{{item.id}}">拒绝</button>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

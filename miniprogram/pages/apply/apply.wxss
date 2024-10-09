@@ -1,0 +1,33 @@
+/* pages/apply/apply.wxss */
+.container {
+    padding: 20rpx;
+    background-color: #ffffff;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    margin-bottom: 20rpx;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 200rpx;
+    padding: 15rpx;
+    border: 1rpx solid #ccc;
+    border-radius: 5rpx;
+    font-size: 28rpx;
+  }
+  
+  .submit-button {
+    padding: 20rpx;
+    background-color: #1AAD19;
+    color: white;
+    border: none;
+    border-radius: 5rpx;
+    font-size: 28rpx;
+  }
+  

@@ -1,0 +1,76 @@
+/* pages/user/user.wxss */
+.container {
+    padding: 20rpx;
+    background-color: #ffffff;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30rpx;
+  }
+  
+  .avatar {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    margin-bottom: 20rpx;
+  }
+  
+  .nickname {
+    font-size: 32rpx;
+    font-weight: bold;
+    margin-bottom: 10rpx;
+  }
+  
+  .phone {
+    font-size: 28rpx;
+    color: #555555;
+  }
+  
+  .projects-section {
+    margin-bottom: 30rpx;
+  }
+  
+  .section-title {
+    font-size: 30rpx;
+    font-weight: bold;
+    margin-bottom: 20rpx;
+  }
+  
+  .project-item {
+    padding: 20rpx;
+    border-bottom: 1rpx solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5rpx;
+    margin-bottom: 10rpx;
+  }
+  
+  .project-title {
+    font-size: 28rpx;
+    font-weight: bold;
+  }
+  
+  .project-status {
+    font-size: 24rpx;
+    color: #555555;
+  }
+  
+  .no-projects {
+    text-align: center;
+    font-size: 28rpx;
+    color: #888888;
+    margin-top: 50rpx;
+  }
+  
+  .logout-button {
+    width: 100%;
+    padding: 20rpx;
+    background-color: #FF3B30;
+    color: #ffffff;
+    border: none;
+    border-radius: 5rpx;
+    font-size: 28rpx;
+  }
+  

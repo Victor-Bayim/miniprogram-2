@@ -1,0 +1,22 @@
+<!-- pages/chat/chat.wxml -->
+<view class="chat-container">
+  <!-- 聊天消息列表 -->
+  <scroll-view scroll-y="true" class="message-list" scroll-with-animation="{{true}}" scroll-top="{{scrollTop}}">
+    <block wx:for="{{messages}}" wx:key="timestamp">
+      <view class="message-item {{item.senderId === userInfo.id ? 'self' : 'other'}}">
+        <image src="{{item.senderAvatar}}" class="avatar"></image>
+        <view class="message-content">
+          <text class="sender-name">{{item.senderName}}</text>
+          <text class="content">{{item.content}}</text>
+          <text class="timestamp">{{item.timestamp}}</text> <!-- 已格式化的时间戳 -->
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+
+  <!-- 输入栏 -->
+  <view class="input-bar">
+    <input placeholder="请输入消息" bindinput="onInput" value="{{inputContent}}" />
+    <button bindtap="sendMessage">发送</button>
+  </view>
+</view>

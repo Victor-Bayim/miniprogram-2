@@ -1,0 +1,10 @@
+/* styles/base.wxss */
+/* 基础样式 */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    padding: 20rpx;
+  }
+  
