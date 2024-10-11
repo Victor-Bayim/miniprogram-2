@@ -1,0 +1,15 @@
+[
+    {
+      "username": "张三",
+      "text": "你好，今天的项目进展如何？",
+      "time": "2024-01-01 10:00:00",
+      "avatar": "https://example.com/user-avatar.png"
+    },
+    {
+      "username": "李四",
+      "text": "进展顺利，已经完成了部分功能。",
+      "time": "2024-01-01 10:05:00",
+      "avatar": "https://example.com/user-avatar-2.png"
+    }
+  ]
+  

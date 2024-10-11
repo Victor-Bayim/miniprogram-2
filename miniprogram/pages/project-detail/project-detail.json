@@ -1,7 +1,0 @@
-{
-    "navigationBarTitleText": "项目详情",
-    "usingComponents": {
-      "navigation-bar": "../../components/navigation-bar/navigation-bar"
-    }
-  }
-  

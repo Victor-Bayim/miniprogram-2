@@ -1,0 +1,15 @@
+[
+    {
+      "id": "1",
+      "name": "项目群聊",
+      "type": "group",
+      "avatar": "https://example.com/group-avatar.png"
+    },
+    {
+      "id": "2",
+      "name": "张三",
+      "type": "individual",
+      "avatar": "https://example.com/user-avatar.png"
+    }
+  ]
+  

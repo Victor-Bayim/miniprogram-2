@@ -1,7 +1,0 @@
-{
-    "navigationBarTitleText": "申请加入",
-    "usingComponents": {
-      "navigation-bar": "../../components/navigation-bar/navigation-bar"
-    }
-  }
-  
